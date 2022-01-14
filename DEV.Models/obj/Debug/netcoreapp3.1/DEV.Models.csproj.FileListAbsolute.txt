@@ -1,0 +1,10 @@
+C:\Test_DEV\PruebaDesarrolloDeSoftware\slnWebApp\DEV.Models\bin\Debug\netcoreapp3.1\DEV.Models.deps.json
+C:\Test_DEV\PruebaDesarrolloDeSoftware\slnWebApp\DEV.Models\bin\Debug\netcoreapp3.1\DEV.Models.dll
+C:\Test_DEV\PruebaDesarrolloDeSoftware\slnWebApp\DEV.Models\bin\Debug\netcoreapp3.1\DEV.Models.pdb
+C:\Test_DEV\PruebaDesarrolloDeSoftware\slnWebApp\DEV.Models\obj\Debug\netcoreapp3.1\DEV.Models.csproj.AssemblyReference.cache
+C:\Test_DEV\PruebaDesarrolloDeSoftware\slnWebApp\DEV.Models\obj\Debug\netcoreapp3.1\DEV.Models.GeneratedMSBuildEditorConfig.editorconfig
+C:\Test_DEV\PruebaDesarrolloDeSoftware\slnWebApp\DEV.Models\obj\Debug\netcoreapp3.1\DEV.Models.AssemblyInfoInputs.cache
+C:\Test_DEV\PruebaDesarrolloDeSoftware\slnWebApp\DEV.Models\obj\Debug\netcoreapp3.1\DEV.Models.AssemblyInfo.cs
+C:\Test_DEV\PruebaDesarrolloDeSoftware\slnWebApp\DEV.Models\obj\Debug\netcoreapp3.1\DEV.Models.csproj.CoreCompileInputs.cache
+C:\Test_DEV\PruebaDesarrolloDeSoftware\slnWebApp\DEV.Models\obj\Debug\netcoreapp3.1\DEV.Models.dll
+C:\Test_DEV\PruebaDesarrolloDeSoftware\slnWebApp\DEV.Models\obj\Debug\netcoreapp3.1\DEV.Models.pdb

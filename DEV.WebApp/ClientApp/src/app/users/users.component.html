@@ -1,0 +1,63 @@
+﻿<div style="text-align:center">
+    <h1>
+        User Records
+    </h1>
+
+    <div class="container">
+        <form>
+            <div class="form-row">
+                <div class="form-group col-md-6">
+                    <div class="input-group-prepend">
+                        <input #columnToFilter type="text" class="form-control" placeholder="column to filter" name="column">
+                    </div>
+                </div>
+                <div class="form-group col-md-6">
+                    <div class="input-group-prepend">
+                        <input #textToSeach type="text" class="form-control" placeholder="text to search" name="text">
+                        <span class="input-group-text" (click)="searchText(columnToFilter.value, textToSeach.value)" style="cursor: pointer;">Search</span>
+                    </div>
+                </div>
+            </div>
+        </form>
+    </div>
+
+    <table class='table table-striped' aria-labelledby="tableLabel" *ngIf="userRecord">
+        <thead>
+            <tr>
+                <th>Id</th>
+                <th>Name</th>
+                <th>Email</th>
+                <th>Gender</th>
+                <th>Status</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr *ngFor="let user of userRecord.data">
+                <td>{{ user.id }}</td>
+                <td>{{ user.name }}</td>
+                <td>{{ user.email }}</td>
+                <td>{{ user.gender }}</td>
+                <td>{{ user.status }}</td>
+            </tr>
+        </tbody>
+    </table>
+
+    <div class="container mw-100">
+        <div class="row">
+            <div class="col-md-3"> </div>
+            <div *ngIf="userRecord" class="col-md-6">
+                <ul class="pagination justify-content-center">
+                    <li *ngFor="let item of fakeArray();let indexOfelement=index;" class="page-item">
+                        <a (click)="getPage(indexOfelement + 1)" style=" margin-right: 5px; margin-top: 5px; cursor: pointer;">{{indexOfelement + 1}}</a>
+                    </li>
+                </ul>
+                <div style="text-align: center;">
+                    Page {{userRecord.meta.pagination.page}} of Total page {{userRecord.meta.pagination.pages}}
+                    <br />
+                    <label>Total Records {{userRecord.meta.pagination.total}}</label>
+                </div>
+            </div>
+        </div>
+    </div>
+
+</div>

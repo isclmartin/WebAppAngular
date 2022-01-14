@@ -1,0 +1,53 @@
+﻿<div style="text-align:center">
+    <h1>
+        Auth
+    </h1>
+
+    <div class="container">
+        <form>
+            <div class="form-row">
+                <div class="form-group col-md-6">
+                    <div class="input-group-prepend">
+                        <input #userName type="text" class="form-control" placeholder="column to filter" name="column">
+                    </div>
+                </div>
+                <div class="form-group col-md-6">
+                    <div class="input-group-prepend">
+                        <input #password type="text" class="form-control" placeholder="text to search" name="text">
+                        <span class="input-group-text" (click)="validateUser(userName.value, password.value)" style="cursor: pointer;">Validate User</span>
+                    </div>
+                </div>
+            </div>
+        </form>
+        <div *ngIf="userAuth">
+            <div class="row">
+                <div class="col-md-4">
+                    <label>authenticated</label>
+                    <span>{{userAuth.authenticated}}</span>
+                </div>
+                <div class="col-md-4">
+                    <label>message</label>
+                    <span>{{userAuth.message}}</span>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-md-4">
+                    <label>userName</label>
+                    <span>{{userAuth.user.userName}}</span>
+                </div>
+                <div class="col-md-4">
+                    <label>authenticated</label>
+                    <span>{{userAuth.user.name}}</span>
+                </div>
+                <div class="col-md-4">
+                    <label>authenticated</label>
+                    <span>{{userAuth.user.lastName}}</span>
+                </div>
+                <div class="col-md-4">
+                    <label>authenticated</label>
+                    <span>{{userAuth.user.email}}</span>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
